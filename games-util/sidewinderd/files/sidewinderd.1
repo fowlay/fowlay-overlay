@@ -1,0 +1,9 @@
+#! /sbin/openrc-run
+
+command="/usr/bin/sidewinderd"
+command_args="-c /etc/sidewinderd.conf -d"
+
+depend() {
+	after coldplug hotplug modules
+	need localmount
+}
