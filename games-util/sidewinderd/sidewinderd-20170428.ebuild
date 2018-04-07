@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="dev-util/cmake dev-libs/libconfig"
+DEPEND="dev-util/cmake dev-libs/libconfig dev-libs/tinyxml2"
 RDEPEND="${DEPEND}"
 
 function src_unpack {
